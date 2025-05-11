@@ -96,6 +96,18 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Date Picker -->
+                        <div>
+                            <label for="showDate" class="block text-gray-400 mb-2 font-medium">Show Date</label>
+                            <input type="date" id="showDate" name="showDate"
+                                   class="w-full bg-gray-700 border border-gray-600 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                                   required>
+                        </div>
+
+
+
+
+
 
                         <!-- Showtime Selector -->
                         <div>
@@ -108,6 +120,9 @@
                                 </c:forTokens>
                             </select>
                         </div>
+
+
+
 
                         <!-- Price Display -->
                         <div class="bg-gray-700/50 rounded-lg p-4">
