@@ -190,10 +190,17 @@
                 secure, and hassle-free
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <%if (isLoggedIn) {%>
+                <a href="${pageContext.request.contextPath}/movies"
+                   class="glow-effect bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">
+                    Book Now
+                </a>
+                <%} else {%>
                 <a href="./login"
                    class="glow-effect bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">
                     Book Now
                 </a>
+                <%}%>
             </div>
         </div>
     </div>
@@ -317,7 +324,7 @@
     // Add floating animation to dots
     const dots = document.querySelectorAll('.animate-float');
     dots.forEach((dot, index) => {
-        dot.style.animation = `float ${3 + index}s ease-in-out infinite`;
+        dot.style.animation = float ${3 + index}s ease-in-out infinite;
     });
 
     // Smooth scrolling for anchor links
