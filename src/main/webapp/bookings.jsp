@@ -112,18 +112,18 @@
                                 </div>
 
                                 <div class="price-tag rounded-lg p-4 min-w-[120px] text-center">
-                                    <p class="text-cyan-400 font-bold text-2xl">$${booking.totalPrice}</p>
+                                    <p class="text-cyan-400 font-bold text-2xl">LKR ${booking.totalPrice}</p>
                                     <a href="#" class="text-xs text-gray-400 hover:text-cyan-400 mt-1 inline-block">View
                                         details</a>
                                 </div>
                             </div>
 
                             <div class="mt-4 pt-4 border-t border-gray-700/50 flex space-x-2">
-                                <a href="${pageContext.request.contextPath}/booking/cancel?id=${booking.id}"
-                                   class="flex-1 text-center bg-gray-700/50 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-medium transition-all">
-                                    Cancel
-                                </a>
-                                <a href="${pageContext.request.contextPath}/movies?id=${booking.movie.id}"
+<%--                                <a href="${pageContext.request.contextPath}/booking/cancel?id=${booking.id}"--%>
+<%--                                   class="flex-1 text-center bg-gray-700/50 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-medium transition-all">--%>
+<%--                                    Cancel--%>
+<%--                                </a>--%>
+                                <a href="${pageContext.request.contextPath}/booking?movieId=${booking.movie.id}"
                                    class="flex-1 text-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:shadow-lg hover:shadow-cyan-500/30 transition-all">
                                     View Movie
                                 </a>
